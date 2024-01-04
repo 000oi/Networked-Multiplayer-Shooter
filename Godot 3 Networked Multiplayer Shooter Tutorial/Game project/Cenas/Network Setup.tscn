@@ -1,0 +1,529 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Game project/Recursos/Font1.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Game project/Scripts/Network Setup.gd" type="Script" id=2]
+[ext_resource path="res://Game project/Scripts/ui.gd" type="Script" id=3]
+
+[node name="Network_Setup" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Multiplayer_Configure" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Create_server" type="Button" parent="Multiplayer_Configure"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -765.25
+margin_top = -28.0
+margin_right = -41.25
+margin_bottom = 84.0
+custom_fonts/font = ExtResource( 1 )
+text = "Create Server"
+
+[node name="Join_server" type="Button" parent="Multiplayer_Configure"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 52.5
+margin_top = -28.0
+margin_right = 776.5
+margin_bottom = 84.0
+custom_fonts/font = ExtResource( 1 )
+text = "Join Server"
+
+[node name="User_ip_address" type="LineEdit" parent="Multiplayer_Configure"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -432.5
+margin_top = 250.0
+margin_right = 432.5
+margin_bottom = 376.6
+custom_fonts/font = ExtResource( 1 )
+align = 1
+placeholder_text = "Enter Username"
+
+[node name="ui" type="CanvasLayer" parent="."]
+script = ExtResource( 3 )
+
+[node name="Device_ip_address" type="Label" parent="ui"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -200.0
+custom_fonts/font = ExtResource( 1 )
+align = 1
+valign = 1
+
+[node name="Start_game_button" type="Button" parent="ui"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -293.0
+margin_top = 186.0
+margin_right = 293.0
+margin_bottom = 298.0
+custom_fonts/font = ExtResource( 1 )
+text = "Start Game"
+
+[node name="Spawn_locations" type="Node" parent="."]
+
+[node name="1" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="2" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="3" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="4" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="5" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="6" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="7" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="8" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="9" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="10" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="11" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="12" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="13" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="14" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="15" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="16" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="17" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="18" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="19" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="20" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="21" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="22" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="23" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="24" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="25" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="26" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="27" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="28" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="29" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="30" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="31" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="32" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="33" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="34" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="35" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="36" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="37" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="38" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="39" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="40" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="41" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="42" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="43" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="44" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="45" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="46" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="47" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="48" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="49" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="50" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="51" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="52" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="53" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="54" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="55" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="56" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="57" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="58" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="59" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="60" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="61" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="62" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="63" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="64" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="65" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="66" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="67" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="68" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="69" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="70" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="71" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="72" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="73" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="74" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="75" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="76" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="77" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="78" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="79" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="80" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="81" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="82" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="83" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="84" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="85" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="86" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="87" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="88" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="89" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="90" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="91" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="92" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="93" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="94" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="95" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="96" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="97" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="98" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="99" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="100" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="101" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="102" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="103" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="104" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="105" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="106" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="107" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="108" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="109" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="110" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="111" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="112" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="113" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="114" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="115" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="116" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="117" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="118" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="119" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="120" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="121" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="122" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="123" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="124" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="125" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="126" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="127" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="128" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="129" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="130" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="131" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="132" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="133" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="134" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="135" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="136" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="137" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="138" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="139" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="140" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="141" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="142" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="143" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="144" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="145" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="146" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="147" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="148" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="149" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[node name="150" type="Position2D" parent="Spawn_locations"]
+position = Vector2( 960, 513 )
+
+[connection signal="pressed" from="Multiplayer_Configure/Create_server" to="." method="_on_Create_server_pressed"]
+[connection signal="pressed" from="Multiplayer_Configure/Join_server" to="." method="_on_Join_server_pressed"]
+[connection signal="pressed" from="ui/Start_game_button" to="." method="_on_Start_game_button_pressed"]

@@ -1,0 +1,171 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Game project/Assets/Down Hill.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Game project/Recursos/Font1.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Game project/Scripts/Server_browser.gd" type="Script" id=3]
+[ext_resource path="res://Game project/Cenas/Server_listener.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "Searching for servers" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1588, 70 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Searching"
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Searching for servers", "Searching for servers.", "Searching for servers..", "Searching for servers..." ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1588, 70 ), Vector2( 1588, 70 ), Vector2( 1588, 70 ), Vector2( 1588, 70 ) ]
+}
+
+[node name="Server_browser" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="Background_panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 96.0
+margin_top = 162.0
+margin_right = -96.0
+margin_bottom = -40.0
+
+[node name="Manual_setup" type="Button" parent="Background_panel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -473.0
+margin_top = -189.0
+margin_right = -30.0
+margin_bottom = -46.0
+custom_fonts/font = ExtResource( 2 )
+text = "Manual Setup"
+
+[node name="Go_back" type="Button" parent="Background_panel"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = -184.0
+margin_right = 473.0
+margin_bottom = -41.0
+custom_fonts/font = ExtResource( 2 )
+text = "Go Back"
+
+[node name="Server_ip_edit_text" type="LineEdit" parent="Background_panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -403.0
+margin_top = -250.0
+margin_right = 403.0
+margin_bottom = -145.0
+custom_fonts/font = ExtResource( 2 )
+align = 1
+
+[node name="Type_in_browser_ip" type="Label" parent="Background_panel/Server_ip_edit_text"]
+anchor_right = 1.0
+margin_top = -100.0
+custom_fonts/font = ExtResource( 2 )
+text = "Type in browser ip"
+align = 1
+valign = 1
+
+[node name="join_server" type="Button" parent="Background_panel/Server_ip_edit_text"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -218.0
+margin_top = 94.5
+margin_right = 225.0
+margin_bottom = 237.5
+custom_fonts/font = SubResource( 1 )
+text = "Join Server"
+
+[node name="Server_container" type="VBoxContainer" parent="Background_panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 70.0
+margin_top = 40.0
+margin_right = -70.0
+margin_bottom = -189.0
+
+[node name="Searching_for_servers" type="Label" parent="Background_panel/Server_container"]
+margin_right = 1588.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 2 )
+text = "Searching for servers"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background_panel/Server_container/Searching_for_servers"]
+autoplay = "Searching"
+anims/RESET = SubResource( 2 )
+anims/Searching = SubResource( 3 )
+
+[node name="Server_browser_label" type="Label" parent="Background_panel"]
+anchor_right = 1.0
+margin_top = -100.0
+margin_bottom = -50.0
+custom_fonts/font = ExtResource( 2 )
+text = "Server Browser"
+align = 1
+valign = 1
+
+[node name="Server_listener" parent="." instance=ExtResource( 4 )]
+
+[connection signal="pressed" from="Background_panel/Manual_setup" to="." method="_on_Manual_setup_pressed"]
+[connection signal="pressed" from="Background_panel/Go_back" to="." method="_on_Go_back_pressed"]
+[connection signal="pressed" from="Background_panel/Server_ip_edit_text/join_server" to="." method="_on_Join_server_pressed"]
+[connection signal="new_server" from="Server_listener" to="." method="_on_Server_listener_new_server"]
+[connection signal="remove_server" from="Server_listener" to="." method="_on_Server_listener_remove_server"]
